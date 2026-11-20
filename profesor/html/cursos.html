@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cursos · Habilidades Blandas</title>
+<link rel="stylesheet" href="../../shared/css/base.css"><link rel="stylesheet" href="../css/profesor.css">
+</head>
+<body class="guarda" data-vista="cursos">
+<header class="top"><a class="logo" href="principal.html"><span class="logo-mark"><img data-img="../../shared/img/logo" alt="Fundación Luz de Esperanza"><b>HB</b></span><span>Habilidades<br>Blandas</span></a><button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button><nav><a href="principal.html"><span class="mi" aria-hidden="true">📋</span>Panel</a><a href="cursos.html" aria-current=page><span class="mi" aria-hidden="true">🗂️</span>Cursos</a><a href="estudiantes.html"><span class="mi" aria-hidden="true">👥</span>Estudiantes</a><a href="matriculas.html"><span class="mi" aria-hidden="true">🎓</span>Matrículas</a><a href="evaluaciones.html"><span class="mi" aria-hidden="true">📝</span>Evaluaciones</a><a href="calificaciones.html"><span class="mi" aria-hidden="true">📊</span>Calificaciones</a><a href="descargas.html"><span class="mi" aria-hidden="true">⬇️</span>Descargas</a><span class="user" data-usuario></span><a class="btn-sm" href="../../auth/html/login.html" data-logout>Salir</a></nav></header>
+<div class="subbar"><span>Profesor / Cursos</span></div>
+<main class="main contenedor"><h1>Cursos</h1><p>Crea cursos nuevos y agrégales las actividades que quieras: lecturas, videos, documentos, tareas, foros y exámenes.</p><section class="tarjeta"><h2>Crear un curso nuevo</h2><form id="form-curso" class="form-grid"><div><label for="c-nombre">Nombre del curso</label><input id="c-nombre" name="nombre" required></div><div><label for="c-emoji">Icono (emoji)</label><input id="c-emoji" name="emoji" value="📘" maxlength="4"></div><div><label for="c-paleta">Color</label><select id="c-paleta" name="paleta"></select></div><div><label for="c-video">Video de portada (opcional)</label><input id="c-video" name="video" placeholder="Enlace de YouTube"></div><div style="grid-column:1/-1"><label for="c-desc">Descripción</label><textarea id="c-desc" name="descripcion" rows="2"></textarea></div><div><button class="btn" type="submit">Crear curso y agregar contenido</button></div></form><p class="aviso" id="aviso-curso" role="alert"></p></section><h2>Tus cursos</h2><div id="vista">Cargando…</div></main>
+<footer class="foot">© 2026 Plataforma de Habilidades Blandas · Fundación Luz de Esperanza · Multimedia y Web</footer>
+<script src="../../shared/js/config.js"></script>
+<script src="../../shared/js/datos.js"></script>
+<script src="../../shared/js/util.js"></script>
+<script src="../../shared/js/main.js"></script>
+<script src="../../shared/js/profesor.js"></script>
+</body>
+</html>
