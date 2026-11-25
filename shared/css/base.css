@@ -300,5 +300,11 @@ code{background:#eef3fb;padding:.1rem .45rem;border-radius:.3rem;font-size:.95re
 .preg{border:1px solid var(--borde);border-radius:.7rem;padding:.8rem 1rem;margin:.8rem 0;background:#fafcff}
 .opc{display:flex;gap:.5rem;align-items:center;margin:.35rem 0}.opc .p-o{flex:1;min-width:0}.opc input[type=radio]{width:1.2rem;height:1.2rem;flex:none}
 .tj-fila{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:.5rem;margin:.4rem 0}
+/* Mejora de contraste (accesibilidad) */
+:root{--azul:#1f6fd1!important;--azul-fuerte:#1a5cb0!important}
+.top nav a:not(.btn-sm):hover{background:rgba(0,0,0,.2)!important}
+.dot{background:#0f766e!important}
+.flip .frente{background:#b34d05!important}
+.estado.si{color:#11663b!important}
 @media (max-width:700px){.tj-fila{grid-template-columns:minmax(0,1fr)}}
 .chk input[type=checkbox]{flex:none}
