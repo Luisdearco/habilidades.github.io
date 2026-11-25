@@ -6,7 +6,7 @@ if (!document.querySelector('meta[name=description]')) {
 }
 // Imágenes opcionales (logo): prueba varias extensiones
 document.querySelectorAll('img[data-img]').forEach(function (img) {
-  var exts = ['png', 'jpg', 'jpeg', 'webp', 'svg'], i = 0, base = img.dataset.img;
+  var exts = ['jpeg'], i = 0, base = img.dataset.img;
   function siguiente() { if (i >= exts.length) { img.remove(); return; } img.src = base + '.' + exts[i++]; }
   img.addEventListener('error', siguiente);
   img.addEventListener('load', function () { img.classList.add('ok'); if (img.parentElement) img.parentElement.classList.add('con-imagen'); });
