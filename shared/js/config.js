@@ -1,3 +1,9 @@
+if (!document.querySelector('meta[name=description]')) {
+  var md = document.createElement('meta');
+  md.name = 'description';
+  md.content = 'Plataforma educativa de habilidades blandas para adolescentes de la Fundación Luz de Esperanza: cursos, tareas, foros y evaluaciones en línea.';
+  document.head.appendChild(md);
+}
 // Configuración de la plataforma
 window.HB_CONFIG = {
   modo: 'supabase', // 'local' = prueba en este navegador | 'supabase' = base de datos compartida (uso real)
